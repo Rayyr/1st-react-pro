@@ -1,0 +1,23 @@
+*{
+    margin:0
+}
+
+.post{
+    margin-top: 30px;
+    border: 3px solid rgb(0, 128, 128);
+    width:fit-content;
+     
+}
+
+.title{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 130px;
+    margin-left: 130px;
+}
+
+.body{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}

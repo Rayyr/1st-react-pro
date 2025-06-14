@@ -1,27 +1,130 @@
- import './App.css';
- import comp from './c1'
-
+import "./App.css";
+import Header from "./header.js";
+import Post from "./post.js";
+import Button from "./button.js";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-         <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <>
+      <Header></Header>
+
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: "20px",
+        }}
+      >
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
         >
-          
-          Learn React
-         <comp/> 
-          
-        </a>
-      </header>
-    </div>
+          <Post></Post>
+          <Post></Post>
+          <Post></Post>
+          <Post></Post>
+          <Post></Post>
+        </div>
+
+        <div
+          className="buttons"
+          style={{
+            border: "3px solid rgb(0,128,128)",
+            marginTop: "-250px",
+            textAlign: "center",
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              gap: "20px",
+              marginBottom: "15px",
+              paddingLeft: "70px",
+              paddingRight: "70px",
+              marginTop: "15px",
+            }}
+          >
+            <Button />
+            <Button />
+          </div>
+
+          <div
+            style={{
+              display: "flex",
+              gap: "20px",
+              marginBottom: "15px",
+              paddingLeft: "70px",
+              paddingRight: "70px",
+            }}
+          >
+            <Button />
+            <Button />
+          </div>
+
+          <div
+            style={{
+              display: "flex",
+              gap: "20px",
+              marginBottom: "15px",
+              paddingLeft: "70px",
+              paddingRight: "70px",
+            }}
+          >
+            <Button />
+            <Button />
+          </div>
+
+          <div
+            style={{
+              display: "flex",
+              gap: "20px",
+              marginBottom: "15px",
+              paddingLeft: "70px",
+              paddingRight: "70px",
+            }}
+          >
+            <Button />
+            <Button />
+          </div>
+
+          <div
+            style={{
+              display: "flex",
+              gap: "20px",
+              marginBottom: "15px",
+              paddingLeft: "70px",
+              paddingRight: "70px",
+            }}
+          >
+            <Button />
+            <Button />
+          </div>
+
+          <div
+            style={{
+              display: "flex",
+              gap: "20px",
+              marginBottom: "15px",
+              paddingLeft: "70px",
+              paddingRight: "70px",
+            }}
+          >
+            <Button />
+            <Button />
+          </div>
+
+          <div style={{marginBottom:'20px'}}> 
+            <Button />
+          </div>
+
+
+        </div>
+      </div>
+    </>
   );
 }
 

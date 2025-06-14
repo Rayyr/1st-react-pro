@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+}
+
+ 
+
+.header{
+    
+    background-color: rgb(0, 128, 128);
+    height: 170px;
+    color:white;
+    font-size: larger;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+     
+}
