@@ -3,6 +3,13 @@ import Header from "./header.js";
 import Post from "./post.js";
 import Button from "./button.js";
 
+let first_title=`20
+        اكاديمية ترميز`;
+
+let btn1_content={title:"جديدة",icon:"💫💫💫",img:null};
+let btn2_content={title:"الاكثر قراءة",icon:null,img:"./assets/watch.png"};
+let btn3_content={title:"مقالات مميزة" , icon:null,img:null};
+ 
 function App() {
   return (
     <>
@@ -23,11 +30,10 @@ function App() {
             alignItems: "center",
           }}
         >
-          <Post></Post>
-          <Post></Post>
-          <Post></Post>
-          <Post></Post>
-          <Post></Post>
+          <Post title={first_title} body="اكاديمية لتعليم البرمجة"></Post>
+          <Post title="Hello world" body="hello world article"></Post>
+          <Post title="post3" body="body of post 3"></Post>
+          
         </div>
 
         <div
@@ -38,89 +44,9 @@ function App() {
             textAlign: "center",
           }}
         >
-          <div
-            style={{
-              display: "flex",
-              gap: "20px",
-              marginBottom: "15px",
-              paddingLeft: "70px",
-              paddingRight: "70px",
-              marginTop: "15px",
-            }}
-          >
-            <Button />
-            <Button />
-          </div>
-
-          <div
-            style={{
-              display: "flex",
-              gap: "20px",
-              marginBottom: "15px",
-              paddingLeft: "70px",
-              paddingRight: "70px",
-            }}
-          >
-            <Button />
-            <Button />
-          </div>
-
-          <div
-            style={{
-              display: "flex",
-              gap: "20px",
-              marginBottom: "15px",
-              paddingLeft: "70px",
-              paddingRight: "70px",
-            }}
-          >
-            <Button />
-            <Button />
-          </div>
-
-          <div
-            style={{
-              display: "flex",
-              gap: "20px",
-              marginBottom: "15px",
-              paddingLeft: "70px",
-              paddingRight: "70px",
-            }}
-          >
-            <Button />
-            <Button />
-          </div>
-
-          <div
-            style={{
-              display: "flex",
-              gap: "20px",
-              marginBottom: "15px",
-              paddingLeft: "70px",
-              paddingRight: "70px",
-            }}
-          >
-            <Button />
-            <Button />
-          </div>
-
-          <div
-            style={{
-              display: "flex",
-              gap: "20px",
-              marginBottom: "15px",
-              paddingLeft: "70px",
-              paddingRight: "70px",
-            }}
-          >
-            <Button />
-            <Button />
-          </div>
-
-          <div style={{marginBottom:'20px'}}> 
-            <Button />
-          </div>
-
+          <Button obj={btn1_content}></Button>
+          <Button obj={btn2_content}></Button>
+          <Button obj={btn3_content}></Button>
 
         </div>
       </div>

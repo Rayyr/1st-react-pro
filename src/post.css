@@ -5,7 +5,8 @@
 .post{
     margin-top: 30px;
     border: 3px solid rgb(0, 128, 128);
-    width:fit-content;
+    width:500px;
+    text-align: center;
      
 }
 
